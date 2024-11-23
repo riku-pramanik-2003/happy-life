@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Verdana', sans-serif;
+      background: radial-gradient(circle, #ff9a9e, #fad0c4, #fbc2eb);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Anniversary Card */
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Thematic Background Decoration */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 150px;
+      height: 150px;
+      background: rgba(255, 102, 102, 0.3);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 204, 153, 0.3);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    /* Image Styling */
+    .card img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    /* Content Styling */
+    .card h1 {
+      font-size: 2.5em;
+      margin: 20px 0;
+      color: #ff6b81;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      margin: 10px 20px;
+      color: #555;
+    }
+
+    /* Button Styling */
+    .card button {
+      background: linear-gradient(45deg, #ff6b81, #ff9472);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 20px 0;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      z-index: 1;
+    }
+
+    /* Button Hover Effect */
+    .card button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #ff4757, #ff6b81);
+    }
+
+    /* Footer Text */
+    .footer {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="IMG_8288.JPG"  height="500" alt="Happy Anniversary">
+    <h1>Happy Anniversary!</h1>
+    <p>Wishing you a lifetime of love, laughter, and happiness together. Enjoy your special day!</p>
+    <h1>23/11/2023</h1>
+    <a href="http://127.0.0.1:5501/Happy/gg.html"><button>Celebrate</button></a>
+    <div class="footer">With Love ❤️</div>
+  </div>
+</body>
+</html>
